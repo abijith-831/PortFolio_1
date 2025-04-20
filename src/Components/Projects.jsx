@@ -40,7 +40,7 @@ const Projects = () => {
         },
         {
           title: "Clash of Clans",
-          description: "Clone using HTML & CSS",
+          description: "Clone using HTML & CSS (Not Responsive)",
           imgUrl: projImg5,
           url:'https://abijith-831.github.io/Clash_of_clans/'
         },

@@ -48,6 +48,14 @@ const Banner = () => {
     }
 
 
+    const downloadCV = ()=>{
+      const link = document.createElement('a');
+      link.href = '/Abhijith_P_CV.pdf'
+      link.download = 'Abhijith_P_CV.pdf'; 
+      link.click();
+    }
+
+
   return (
     <section className='banner' id='home'> 
         <Container>
@@ -59,11 +67,7 @@ const Banner = () => {
                     <p>Passionate and detail-oriented full-stack developer with 1 year of experience in MERN stack development.
                     Proficient in building scalable web applications using JavaScript, React.js, Node.js, and MongoDB. Strong
                     problem-solving skills, a commitment to continuous learning, and a proven ability to deliver impactful solutions</p>
-                    <a href="/Abhijith_CV.pdf" download>
-                        <button>
-                            Download CV <ArrowDownCircle size={30} />
-                        </button>
-                    </a>
+                    <button onClick={downloadCV}>Download CV<ArrowDownCircle size={30}/></button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <img src={headerImg} alt="header image" style={{ maxWidth: '60%', height: 'auto' }} />
