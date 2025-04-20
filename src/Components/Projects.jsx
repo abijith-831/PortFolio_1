@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container , Row , Col , Tab , Nav} from 'react-bootstrap';
+import { Container , Row , Col , Tab } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png'
 import projImg1 from "../assets/projects/rushgames.png";
@@ -25,6 +25,7 @@ const Projects = () => {
           title: "User Management System",
           description: "Using React & Redux",
           imgUrl: projImg2,
+          url:'https://reactumsclient.vercel.app'
         },
         {
           title: "User Management System",
@@ -35,26 +36,31 @@ const Projects = () => {
           title: "Mercely's",
           description: "Clone using HTML/CSS & Bootstrap",
           imgUrl: projImg4,
+          url:'https://mercelys-abijith-831s-projects.vercel.app/'
         },
         {
           title: "Clash of Clans",
           description: "Clone using HTML & CSS",
           imgUrl: projImg5,
+          url:'https://abijith-831.github.io/Clash_of_clans/'
         },
         {
           title: "Netflix",
           description: "Clone using React",
           imgUrl: projImg6,
+          url:'https://netflix-clone-two-beta-62.vercel.app/'
         },
         {
           title: "Bombay 99",
           description: "Clone using HTML & CSS",
           imgUrl: projImg7,
+          url:'https://bombay-99-abijith-831s-projects.vercel.app/'
         },
         {
           title: "OLX",
           description: "Clone using React",
           imgUrl: projImg8,
+          url:'https://olx-clone-drab-nu.vercel.app/'
         },
       ];
 
