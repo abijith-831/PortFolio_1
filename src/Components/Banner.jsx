@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowDownCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/luffyop.svg'
 
 const Banner = () => {
@@ -59,7 +59,11 @@ const Banner = () => {
                     <p>Passionate and detail-oriented full-stack developer with 1 year of experience in MERN stack development.
                     Proficient in building scalable web applications using JavaScript, React.js, Node.js, and MongoDB. Strong
                     problem-solving skills, a commitment to continuous learning, and a proven ability to deliver impactful solutions</p>
-                    <button >Let's Connect <ArrowRightCircle size={30}/></button>
+                    <a href="/Abhijith_CV.pdf" download>
+                        <button>
+                            Download CV <ArrowDownCircle size={30} />
+                        </button>
+                    </a>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <img src={headerImg} alt="header image" style={{ maxWidth: '60%', height: 'auto' }} />
