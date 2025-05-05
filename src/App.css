@@ -536,6 +536,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
+
+.contact form input:hover{
+  transform: scale(1.04);
+}
+.contact form textarea:hover{
+  transform: scale(1.02);
+}
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
@@ -569,9 +576,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: linear-gradient(to left, #043a3b, #00db92);
   width: 0;
   height: 100%;
+  border: 1px solid black;
   position: absolute;
   top: 0;
   left: 0;
@@ -585,7 +593,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
+  background-color: #031f13;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -69,7 +69,7 @@ const Banner = () => {
                     problem-solving skills, a commitment to continuous learning, and a proven ability to deliver impactful solutions</p>
                     <button onClick={downloadCV}>Download CV<ArrowDownCircle size={30}/></button>
                 </Col>
-                <Col xs={12} md={6} xl={5}>
+                <Col xs={12} md={6} xl={5} className='text-center'>
                     <img src={headerImg} alt="header image" style={{ maxWidth: '60%', height: 'auto' }} />
                 </Col>
             </Row>

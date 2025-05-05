@@ -5,6 +5,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/github.svg'
 import navIcon3 from '../assets/img/nav-icon3.svg'
+import { HashLink } from 'react-router-hash-link';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 
 function BasicExample() {
@@ -43,11 +47,14 @@ function BasicExample() {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href="https://www.linkedin.com/in/abhijith-p-42747335a/" target="_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://www.linkedin.com/in/abhijith-p-0605ab259/" target="_blank"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/abijith-831" target='_blank'><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/abhi_jith_p831?igsh=ZnV5NzM5M3huajdm" target='_blank'> <img src={navIcon3} alt="" /></a>
             </div>
-            <button ><span>Let's Connect</span></button>
+            <Nav.Link href="#connect">
+                <button className="vvd"><span>Let’s Connect</span></button>
+            </Nav.Link>
+
           </span>
         </Navbar.Collapse>
       </Container>
