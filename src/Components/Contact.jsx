@@ -41,22 +41,22 @@ export const Contact = () => {
     try {
 
       //================ hosted on vercel ===================
-      // const response = await fetch("https://portfolio-1-server.onrender.com/contact", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(formDetails),
-      // });
-
-      //================localhost =======================
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch("https://portfolio-1-server.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formDetails),
       });
+
+      //================localhost =======================
+      // const response = await fetch("http://localhost:5000/contact", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(formDetails),
+      // });
 
       if (!response.ok) {
         throw new Error(`Server responded with status: ${response.status}`);
