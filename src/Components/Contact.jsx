@@ -27,7 +27,6 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Basic validation
     if (!formDetails.firstName || !formDetails.email || !formDetails.message) {
       setStatus({ success: false, message: 'Please fill in all required fields (name, email, message).' });
       return;
@@ -37,12 +36,9 @@ export const Contact = () => {
     setIsLoading(true);
     setStatus({ success: true, message: 'Attempting to connect to server...' });
     
-    // Log form data being sent
-    console.log("Sending form data:", formDetails);
     
     try {
-      console.log("Sending request to: https://portfolio-1-server.onrender.com/contact");
-      
+      //================ hosted on vercel ===================
       const response = await fetch("https://portfolio-1-server.onrender.com/contact", {
         method: "POST",
         headers: {
@@ -50,16 +46,22 @@ export const Contact = () => {
         },
         body: JSON.stringify(formDetails),
       });
-      
-      console.log("Response status:", response.status);
-      console.log("Response headers:", [...response.headers.entries()]);
+
+      //================localhost =======================
+      // const response = await fetch("http://localhost:5000/contact", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(formDetails),
+      // });
+
       
       if (!response.ok) {
         throw new Error(`Server responded with status: ${response.status}`);
       }
       
       const result = await response.json();
-      console.log('Response data:', result);
       
       if (result.status === 'Message Sent') {
         setStatus({ success: true, message: 'Message sent successfully!' });
