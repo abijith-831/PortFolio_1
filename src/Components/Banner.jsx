@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowDownCircle } from 'react-bootstrap-icons';
-import headerImg from '../assets/img/luffyop.svg'
+import headerImg from '../assets/img/9933427_4300578.svg'
 
 const Banner = () => {
 
@@ -70,7 +70,7 @@ const Banner = () => {
                     <button onClick={downloadCV}>Download CV<ArrowDownCircle size={30}/></button>
                 </Col>
                 <Col xs={12} md={6} xl={5} className='text-center'>
-                    <img src={headerImg} alt="header image" style={{ maxWidth: '60%', height: 'auto' }} />
+                    <img src={headerImg} alt="header image" style={{ maxWidth: '90%', height: 'auto' }} />
                 </Col>
             </Row>
         </Container>
