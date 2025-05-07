@@ -8,7 +8,7 @@ import Projects from './Components/Projects';
 import { Contact } from './Components/Contact';
 import Footer from './Components/Footer';
 
-const splashMessages = ["Hello", "नमस्ते", "നമസ്കാരം", "வணக்கம்", 'Hi'];
+const splashMessages = ["Hello", "नमस्ते", "നമസ്കാരം", "வணக்கம்", 'Hi...'];
 
 function App() {
   const [step, setStep] = useState(0);
@@ -17,12 +17,10 @@ function App() {
 
   useEffect(() => {
     if (step < splashMessages.length) {
-      // First fade out the current text
       const fadeOutTimer = setTimeout(() => {
         setFadeIn(false);
       }, 300);
 
-      // Then change the text and fade in the new text
       const changeTextTimer = setTimeout(() => {
         setStep(step + 1);
         setFadeIn(true);
