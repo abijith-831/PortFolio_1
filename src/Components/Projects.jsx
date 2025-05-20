@@ -20,7 +20,7 @@ const Projects = () => {
           title: "RushGames",
           description: "E-Commerce Website",
           imgUrl: projImg1,
-          url:'http://13.200.76.197/'
+          url:'https://rushgamez.online/'
         },
         {
           title: "User Management System",
