@@ -20,7 +20,7 @@ const Projects = () => {
           title: "RushGames",
           description: "E-Commerce Website",
           imgUrl: projImg1,
-          url:'https://drive.google.com/file/d/1HXZ9ZT9fy8SCSqY8KsnZsTLZv-ip_z97/view?usp=drive_link'
+          url:'http://13.200.76.197/'
         },
         {
           title: "User Management System",
