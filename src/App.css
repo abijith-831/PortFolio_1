@@ -252,7 +252,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 }
 .banner .tagline:hover{
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .banner h1 {
   font-size: 65px;
@@ -264,7 +264,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 1s;
 }
 .banner h1:hover{
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .banner p {
   color: #B8B8B8;
@@ -275,7 +275,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 1s;
 }
 .banner p:hover{
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .banner button {
   color: #fff;

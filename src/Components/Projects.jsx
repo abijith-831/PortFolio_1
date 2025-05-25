@@ -10,6 +10,7 @@ import projImg5 from "../assets/projects/coc.png";
 import projImg6 from "../assets/projects/netflix-clone.png";
 import projImg7 from "../assets/projects/bombay-99.png";
 import projImg8 from "../assets/projects/olx-clone.png";
+import { motion } from 'framer-motion'
 
 
 
@@ -76,18 +77,28 @@ const Projects = () => {
 
                   <Tab.Content id="slideInUp" className={ "animate__animated animate__slideInUp"}>
                     <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
+                    <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.4 }}
+                    variants={{
+                      hidden: {},
+                      visible: {
+                        transition: {
+                          staggerChildren: 0.1
                         }
-                      </Row>
+                      }
+                    }}
+                  >
+                    <Row>
+                      {projects.map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                      ))}
+                    </Row>
+                  </motion.div>
+
+
+                      
                     </Tab.Pane>
 
 
