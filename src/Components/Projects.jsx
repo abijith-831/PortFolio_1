@@ -27,7 +27,7 @@ const Projects = () => {
         {
           title:'Habot learning Resources',
           description : 'Learning Platform',
-          imgUrl:'projImg9',
+          imgUrl:projImg9,
           url:'https://learning-resource-zpqe.vercel.app/'
         },
         {
