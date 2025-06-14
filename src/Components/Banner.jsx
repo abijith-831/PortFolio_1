@@ -75,7 +75,7 @@ const Banner = () => {
                 </Col>
             </Row>
         </Container>
-    </section>
+    </section> 
   )
 }
 

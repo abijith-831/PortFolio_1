@@ -10,6 +10,7 @@ import projImg5 from "../assets/projects/coc.png";
 import projImg6 from "../assets/projects/netflix-clone.png";
 import projImg7 from "../assets/projects/bombay-99.png";
 import projImg8 from "../assets/projects/olx-clone.png";
+import projImg9 from "../assets/projects/habot.png"
 import { motion } from 'framer-motion'
 
 
@@ -22,6 +23,12 @@ const Projects = () => {
           description: "E-Commerce Website",
           imgUrl: projImg1,
           url:'https://rushgamez.online/'
+        },
+        {
+          title:'Habot learning Resources',
+          description : 'Learning Platform',
+          imgUrl:'projImg9',
+          url:'https://learning-resource-zpqe.vercel.app/'
         },
         {
           title: "User Management System",
